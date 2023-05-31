@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #22254b;
+  /* border: 12px solid pink; */
+  color: white;
+  margin: 0;
+  display: flex;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.movie {
+  width: 275px;
+  /* border: 5px solid green; */
+  margin: 1rem;
+  overflow: hidden;
+  background-color: #373b69;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.movie img {
+  max-width: 100%;
+  /* border: 2px solid red; */
+  display: flex;
+  flex-direction: row;
+}
+
+.info {
+  display: flex;
+  padding: 0.4rem;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 5px solid yellow; */
+}
+
+.info h3 {
+  margin: 0;
+}
+.evaluate {
+  /* border: 5px solid aqua; */
+  margin: 0;
+  padding: 0.4rem;
+  background-color: #22254b;
+}
+.star {
+  display: flex;
+  justify-content: right;
+  /* border: 3px solid rgb(255, 4, 255); */
+  margin: 0;
+}
+.rate {
+  display: flex;
+  justify-content: right;
+  border: 3px solid brown;
+}
+
+.overview {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  background-color: black;
+  padding: 1rem;
+  transform: translateY(102%);
+  overflow: auto;
+  max-height: 100%;
+  max-width: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.movie:hover .overview {
+  transform: translateY(0%);
+}
+
+.changeRed {
+  color: red !important;
+}
+.changeOrange {
+  color: orange !important;
+}
